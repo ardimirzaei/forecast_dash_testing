@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install json requests pandas
+        pip install requests pandas
     - name: Check Data Sources
       run: |
         python .github/datasource_checker.py
