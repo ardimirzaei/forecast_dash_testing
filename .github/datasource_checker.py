@@ -14,7 +14,7 @@ with open("./shared_config/data_sources.json" ) as data_sources_json_file:
 #%%
 
 results = []    
-for data_source in data_sources_list:
+for data_source in data_sources_list[:15]:
     title = data_source['title']
     url = data_source['url']
     status = requests.get(url).status_code
